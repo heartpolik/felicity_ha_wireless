@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Felicity battery (local Wi-Fi)",
+        "description": "IP address of the battery's Wi-Fi module. Reserve it in your router's DHCP.",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        }
+      },
+      "reconfigure": {
+        "title": "Change address",
+        "data": {
+          "host": "Host",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the module",
+      "not_battery": "The device answered, but it does not look like a Felicity battery"
+    },
+    "abort": {
+      "already_configured": "Already configured",
+      "reconfigure_successful": "Address updated"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Polling",
+        "data": {
+          "scan_interval": "Update interval, s"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "soc": {
+        "name": "State of charge"
+      },
+      "soh": {
+        "name": "State of health"
+      },
+      "voltage": {
+        "name": "Voltage"
+      },
+      "current": {
+        "name": "Current"
+      },
+      "power": {
+        "name": "Power"
+      },
+      "temp1": {
+        "name": "Temperature 1"
+      },
+      "temp2": {
+        "name": "Temperature 2"
+      },
+      "cell_max": {
+        "name": "Cell max"
+      },
+      "cell_min": {
+        "name": "Cell min"
+      },
+      "cell_delta": {
+        "name": "Cell delta"
+      },
+      "charge_v_limit": {
+        "name": "Charge voltage limit"
+      },
+      "discharge_v_limit": {
+        "name": "Discharge voltage limit"
+      },
+      "charge_i_limit": {
+        "name": "Charge current limit"
+      },
+      "discharge_i_limit": {
+        "name": "Discharge current limit"
+      },
+      "fault": {
+        "name": "Fault code"
+      },
+      "warning": {
+        "name": "Warning code"
+      },
+      "cell_n": {
+        "name": "Cell {n}"
+      },
+      "state": {
+        "name": "State",
+        "state": {
+          "full": "Full",
+          "standby": "Standby",
+          "charging": "Charging",
+          "discharging": "Discharging",
+          "other": "Other"
+        }
+      }
+    },
+    "binary_sensor": {
+      "link": {
+        "name": "Link"
+      }
+    }
+  }
+}

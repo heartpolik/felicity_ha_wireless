@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Батарея Felicity (локальний Wi-Fi)",
+        "description": "IP-адреса Wi-Fi модуля батареї. Закріпіть її в DHCP роутера.",
+        "data": {
+          "host": "Адреса",
+          "port": "Порт"
+        }
+      },
+      "reconfigure": {
+        "title": "Змінити адресу",
+        "data": {
+          "host": "Адреса",
+          "port": "Порт"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не вдалося підключитися до модуля",
+      "not_battery": "Пристрій відповів, але це не схоже на батарею Felicity"
+    },
+    "abort": {
+      "already_configured": "Вже налаштовано",
+      "reconfigure_successful": "Адресу оновлено"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Опитування",
+        "data": {
+          "scan_interval": "Інтервал оновлення, с"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "soc": {
+        "name": "Заряд"
+      },
+      "soh": {
+        "name": "Здоров'я (SOH)"
+      },
+      "voltage": {
+        "name": "Напруга"
+      },
+      "current": {
+        "name": "Струм"
+      },
+      "power": {
+        "name": "Потужність"
+      },
+      "temp1": {
+        "name": "Температура 1"
+      },
+      "temp2": {
+        "name": "Температура 2"
+      },
+      "cell_max": {
+        "name": "Комірка макс"
+      },
+      "cell_min": {
+        "name": "Комірка мін"
+      },
+      "cell_delta": {
+        "name": "Різниця комірок"
+      },
+      "charge_v_limit": {
+        "name": "Ліміт напруги заряду"
+      },
+      "discharge_v_limit": {
+        "name": "Ліміт напруги розряду"
+      },
+      "charge_i_limit": {
+        "name": "Ліміт струму заряду"
+      },
+      "discharge_i_limit": {
+        "name": "Ліміт струму розряду"
+      },
+      "fault": {
+        "name": "Код аварії"
+      },
+      "warning": {
+        "name": "Код попередження"
+      },
+      "cell_n": {
+        "name": "Комірка {n}"
+      },
+      "state": {
+        "name": "Стан",
+        "state": {
+          "full": "Заряджена",
+          "standby": "Очікування",
+          "charging": "Заряд",
+          "discharging": "Розряд",
+          "other": "Інше"
+        }
+      }
+    },
+    "binary_sensor": {
+      "link": {
+        "name": "Зв'язок"
+      }
+    }
+  }
+}

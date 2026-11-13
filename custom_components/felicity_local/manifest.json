@@ -1,0 +1,12 @@
+{
+  "domain": "felicity_local",
+  "name": "Felicity Wireless (local)",
+  "codeowners": ["@heartpolik"],
+  "config_flow": true,
+  "documentation": "https://github.com/heartpolik/felicity_ha_wireless",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/heartpolik/felicity_ha_wireless/issues",
+  "requirements": [],
+  "version": "0.2.0"
+}
